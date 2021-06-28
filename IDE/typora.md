@@ -1,0 +1,13 @@
+- 加粗：Ctrl+B
+- 斜体：Ctrl+I
+- 下划线：Ctrl+U
+- 代码：Ctrl+Shift+`
+- 删除线：Alt+Shift+5
+- 超链接：Ctrl+K
+- 图像：Ctrl+Shift+I
+- 清除样式：Ctrl+
+
+- 查找：Ctrl+F
+- 查找下一个：F3
+- 查找上一个：Shift+F3
+- 替换：Ctrl+H
