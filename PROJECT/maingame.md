@@ -197,31 +197,15 @@ selectedBackgroundProperty.objectReferenceValue = backgroundProperty.GetArrayEle
 
 
 
+1settlepage 200字体颜色
 
+2shop字体黑白框细节
 
+3infopage 设置 translateall bug
 
+4settlepage 200下划线
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+5mainpage level
 
 
 
