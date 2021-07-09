@@ -96,11 +96,13 @@ convert ToString
 
 double.TryParse(out double number)内联？不用提前声明number，但number只能在作用域内可用
 
-#### 第三章
+#### 第三章 更多数据类型
 
 int? count = null;引用类型赋给值类型
 
+##### 元组
 
+(string Name,string Capital,double GdpPerCapita) countryInfo = ("Malawi","Lilongwe",226.50);
 
 静态方法-实例方法
 
@@ -118,3 +120,105 @@ int? count = null;引用类型赋给值类型
 
 
 #### 本地化？
+
+#### 第四章
+
+##### 操作符
+
+空合并操作符??
+
+空条件操作符?.
+
+1使用时要长度检查（元素存在）>为空>有值 非空不代表有值，用args?.Length检查元素数量
+
+2简化委托 PropertyChanged?.Invoke(propertyChanged(this,new PropertyChangedEventArgs(nameof(Name))))
+
+等价于
+
+PropertyChangedEventHandler propertyChanged = PropertyChanged;
+
+if(propertyChanged!=null){
+
+propertyChanged(this,new PropertyChangedEventArgs(nameof(Name))));
+
+}
+
+do while适用于循环至少执行一次的情况
+
+##### C#预处理器指令
+
+#if 指令
+
+#elif 指令
+
+#endif
+
+大段代码块
+
+#region 指令
+
+#endregion
+
+#### 第五章 方法和参数
+
+命名空间 公司名-产品名-功能领域
+
+写代码要注意可读性，而不是简短
+
+表达式主体方法=>
+
+C#从来不将实现与声明分开
+
+
+
+ using和using static
+
+ 引用参数 ref
+
+输出参数 out，
+
+1功能与ref完全一致，编译器会检查所有返回路径上是否都对out参数赋值，没有会报错
+
+2fun(a,out _) 放弃out参数
+
+3返回两个或多个值首先考虑元组写法
+
+只读传引用 in
+
+不能修改值，减少拷贝量，增强性能
+
+返回引用？？
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
+
+第章
