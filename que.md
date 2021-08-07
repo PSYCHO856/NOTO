@@ -4,17 +4,61 @@ epic
 
 
 
+声音 进游戏不会放声音 playerprefs存储
+
+音乐有水印
+
+
+
+
+
 
 
 https://feamber.yuque.com/ea4u6u/wmq44f/hxgx08
 
 
 
+回退和加瓶子按钮刷新问题
+
+
+
+vscode菜单栏
+
+
+
+倒水
+
+获取服务器档数数据
+
+更新玩家数据
+
+
+
+提现idt switch withdrawstatus
+
+提现记录页面 计时器刷新
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+串串
+
+ui
+
+3一次三个
 
 
 
