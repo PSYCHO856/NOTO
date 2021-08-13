@@ -52,4 +52,53 @@ extraDelay！
 
 
 
-### **撤销 加串加限制**
+### ~~**撤销 加串加限制**~~
+
+
+
+#### isdone怎么更新的
+
+```
+public bool IsDone => IsEmpty || (IsFull && Layers.Count == 1);
+```
+
+每次调用都get检查属性
+
+所以不用set 不用=true赋值
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
