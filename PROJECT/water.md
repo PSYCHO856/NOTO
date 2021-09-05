@@ -1,4 +1,6 @@
-#### 广告逻辑更新
+[toc]
+
+#### 1.0.1 广告逻辑更新
 
 1重做 第一次免费，第二次开始右下出现图片，点击进广告
 
@@ -13,3 +15,25 @@ if条件 只在第三关跳出、israteshow=true，虽然初始赋值false但在
 
 
  
+
+#### 1.0.4 8/11
+
+
+
+区分定义nativebanner？
+
+
+
+#### WaterPuzzleAS_Mono
+
+##### launcher
+
+##### rqwx
+
+##### unityLibrary
+
+传svn每次这两个文件要revert
+
+build.gradle
+
+settings.gradle
