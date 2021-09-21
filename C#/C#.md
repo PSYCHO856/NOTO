@@ -17,3 +17,8 @@ const和readonly 静态常量和动态常量
 ![image-20210806104521406](C:\Users\xian\AppData\Roaming\Typora\typora-user-images\image-20210806104521406.png)
 
 https://www.cnblogs.com/daidaibao/p/4214268.html
+
+
+
+CIL c#翻译的底层语言
+

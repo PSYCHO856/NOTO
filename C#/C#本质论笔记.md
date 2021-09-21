@@ -247,11 +247,85 @@ ref 引用 例子 ab值交换
 
  
 
+#### 第七章 继承
+
+派生类可以直接赋给基类，因为是从属关系，直接转换，不会实例化新实例。反之不一定，需要显式转换，且运行时编译器检查，有错报错。
+
+隐式 implicit
+
+显式 explicit
+
+private
+
+protected
+
+​	只有派生类**内部**可以访问
+
+​	在Contact里不能PdaItem.ObjectKey 也不能Contact.ObjectKey，只能直接ObjectKey 
+
+派生类可以作为基类来使用**扩展方法**
+
+C#用聚合代替多继承 派生类内部定义第二个基类的实例作为关联，通过属性调用第二个基类里的字段/属性
+
+​	缺点：需要人工添加
+
+##### 密封类、重写基类 
+
+override任何成员自动成为虚成员，方便后续继续重写
+
+virtual 支持重写实例方法和属性，不支持字段和静态方法重写
+
+运行时遇到虚方法会调用最远的实现，**即使派生类构造函数可能未执行完**。与c++相反
+
+protected virtual
+
+**虚暗示着实例 static virtual编译器不允许**
+
+new 搜索从new开始的继承链 没有override定义实例方法或属性默认为new
+
+##### base成员
+
+使用类似this
+
+##### 构造函数
+
+派生类定义构造函数时**显式指定**基类构造函数
+
+##### 抽象类
+
+可定义virtual 但不能有实例
+
+abstract本身就是virtual
+
+##### System.Object
+
+equals getHashCode GetType ReferenceEquals ToString Finalize MemberwiseClone
+
+##### is
+
+1判断基础类型
+
+优点：能创建一个**显式转换失败**但**没有异常处理开销**的代码路径
+
+2模式匹配 同1 可判断非基础类型
+
+switch语句也支持模式匹配
+
+##### as
+
+尝试类型转换且不触发异常 **不能判断基础类型** 不进行非空检查 少用
 
 
-第章
 
-第章
+#### 第八章 接口
+
+接口也能实现多态
+
+ 所有成员都public Pascal大小写+I前缀
+
+
+
+
 
 第章
 
@@ -280,3 +354,4 @@ ref 引用 例子 ab值交换
 第章
 
 第章 
+
