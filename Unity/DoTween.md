@@ -77,8 +77,10 @@ public class DOTWeenTest : MonoBehaviour
     void Start()
     { 
         twe = transform.DOMove(new Vector3(3, 4, 0), 2);//将动画保存在Tweener对象中 
+                //重要 否则playbackwards不生效
         twe.Pause();//暂停,防止自动播放  
         twe.SetAutoKill(false);//关闭动画自动销毁  
+
     }
     //创建两个方法事件,控制前放后倒放
     public void Forward()
@@ -462,9 +464,11 @@ s.SetLoops(-1, LoopType.Yoyo);
 
      DOBlendableMoveBy允许多个同时执行, 且它是增量动画，参数不是目标点，而是要移动的量
      
-3. 好像单纯的挂载到物体上，不激活的动画也会生效？
+3. 好像单纯的挂载到物体上，不激活的动画也会生效
 
-     
+4. playbackward要pause setautokill 先保存动画才能生效
+
+5. 使用时会莫名其妙影响其他的动画
 
 https://easings.net/cn
 
@@ -489,3 +493,6 @@ DOTween.To(() => timeCount, a => timeCount = a, 0.1f, 0.1f).OnComplete(new Tween
             {
             //延时后的操作
              }));
+
+
+
