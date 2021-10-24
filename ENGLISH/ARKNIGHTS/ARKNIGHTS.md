@@ -89,3 +89,82 @@ incise 切 割
 detour 迂回 绕道
 
 evacuating 疏散v
+
+
+
+
+
+speculate 推测
+
+murky 阴郁的
+
+icouldonlymove onward 向前
+
+snap 猛地关上 折断
+
+shabby 低劣吝啬
+
+identical 同一的
+
+abate 减少
+
+scramble 迅速吃力的 艰难的完成
+
+objective 目标
+
+resignation 辞职 书
+
+indistinguishable 不能区别的
+
+mock 嘲笑
+
+simulate 模仿
+
+gaze 凝视
+
+likelihood 可能性
+
+compose 构成 编曲 组成 写作
+
+chill 寒冷 扫兴
+
+cast 投 抛
+
+construct 建造
+
+altar 祭坛
+
+hasten 加速
+
+encompassing 环绕的
+
+merit 值得
+
+tremble 颤抖
+
+concede 承认 让步
+
+cloak 斗篷
+
+blockhead 笨蛋
+
+substitute 代替
+
+flippant 没礼貌的
+
+ego 自我
+
+superego 超我
+
+id 本我
+
+wrap 缠绕
+
+sage 圣人
+
+exploit 剥削 开发
+
+sew 缝
+
+
+
