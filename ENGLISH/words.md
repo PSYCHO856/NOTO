@@ -12,3 +12,6 @@ Credential 证书
 
 token 标志
 
+stash 藏匿
+
+parry 闪避
