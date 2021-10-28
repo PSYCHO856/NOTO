@@ -470,6 +470,10 @@ s.SetLoops(-1, LoopType.Yoyo);
 
 5. 使用时会莫名其妙影响其他的动画
 
+6. 
+
+#### 曲线
+
 https://easings.net/cn
 
 线性Ease.Linear

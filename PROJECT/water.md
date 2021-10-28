@@ -37,3 +37,48 @@ if条件 只在第三关跳出、israteshow=true，虽然初始赋值false但在
 build.gradle
 
 settings.gradle
+
+
+
+#### 广告 pc测试 AdsDummyHandler
+
+
+
+```
+public bool IsRewardVideoReady()
+{
+    bool ready = Random.Range(0, 2) > 0;
+    Debug.Log(nameof(IsRewardVideoReady) + " " + ready);
+    return false;
+}
+```
+
+
+
+
+
+#### 结算金币动画数字效果
+
+1金币动画
+
+按钮点击处出现
+
+2数字效果
+
+原数字加结算奖励 过渡
+
+3数字变动结束 关闭页面
+
+
+
+
+
+页面动画
+
+ispopup 最上层 
+
+```
+base.OnOpen();
+```
+
+![image-20211011164507098](C:\Users\xian\AppData\Roaming\Typora\typora-user-images\image-20211011164507098.png)

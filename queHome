@@ -4,15 +4,7 @@ https://feamber.yuque.com/ea4u6u/wmq44f/hxgx08
 
 svn://feamberhz.synology.me/MiniGame2021
 
-玩家心态
 
-1动机 被大他者支配需要放松——会去玩让人能共情、能参与互动的故事、视觉小说等
-
-2 作为大他者时产生空虚感——普通人会喜欢能让人放松、发泄的类型，多竞技类
-
-3slg？
-
-4休闲游戏——受众为成年人则1是女性 2时间不值钱的人
 
 
 
@@ -26,9 +18,129 @@ cursing
 
 
 
+1recorddata数据初始化 怎么调用PuzzleDatabase数据？
+
+游戏存档数据RecordData和游戏固定数据LevelDataBase是两个模块，初始化时不应互相调用
+
+![QQ图片20210930164104](C:\Users\xian\Desktop\QQ图片20210930164104.png)
+
+
+
+
+
+~~3challengepage prefab打不开 scale0了~~altshift5
+
+4TimeController.StartGame();
+
+5page为什么不singleton
+
+mvc
+
+6反射
+
+7addlisten最好add具名方法，具名方法才能remove
+
+8我代码架构上有问题
+
+
+
+9RectTransformUtility.WorldToScreenPoint api?
+
+![image-20211002155042259](C:\Users\xian\AppData\Roaming\Typora\typora-user-images\image-20211002155042259.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1如果你生命剩最后三年 你想做什么
 
 2列出想做出改变的原因 做一张海报
 
+玩家心态
 
+1动机 被大他者支配需要放松——会去玩让人能共情、能参与互动的故事、视觉小说等
+
+2 作为大他者时产生空虚感——普通人会喜欢能让人放松、发泄的类型，多竞技类
+
+3slg？
+
+4休闲游戏——受众为成年人则1是女性 2时间不值钱的人
 

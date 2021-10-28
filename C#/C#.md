@@ -24,6 +24,53 @@ CIL c#翻译的底层语言
 
 
 
+#### ToString
+
+时间格式
+
+```
+public static string invertTime(int leftseconds)
+{
+    //Time.timeScale = 0;
+    int second = leftseconds % 60;
+    int hour = leftseconds / 60 / 60;
+    int minute = leftseconds / 60 - hour * 60;
+    return hour.ToString("00") + ":" + minute.ToString("00") + ":" + second.ToString("00");
+}
+```
 
 
-反射 
+
+#### using
+
+```
+using (new EditorGUI.DisabledScope(levelItemIsDragged))
+{
+    selectedTabIndex = GUILayout.Toolbar(selectedTabIndex, tabsNames);
+}
+```
+
+自动回收（）中语句 
+
+使用using要实现IDisposable接口
+
+```
+using (MyDispose md = new MyDispose())
+{
+      md.DoWork();
+}
+
+MyDispose md;
+try
+{
+    md = new MyDispose();
+    md.DoWork();
+}
+finally
+{
+    md.Dispose();
+}
+```
+
+
+
