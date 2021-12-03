@@ -12,3 +12,21 @@ pack preview
 
 layout group使用
 
+
+
+
+
+UI和画面要保证这3种分辨率下对。 iphone8，iphone x，ipad（分别代表市面上的主流分辨率）
+
+
+
+
+
+#### 锚点
+
+parkjam商店ui
+
+皮肤图片preview 长分辨率位置太靠下
+
+改变锚点位置解决 并且不会使720*1280效果变化
+

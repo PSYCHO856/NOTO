@@ -56,3 +56,164 @@ private void LoadEditorTextures()
 场景栏杆
 
 直接开始！
+
+
+
+#### 车出
+
+```
+StartCoroutine(MoveToFinish(LevelController.GetFinishPosition(Road)));
+```
+
+
+
+
+
+
+
+
+
+carmoderenderer
+
+scriptobject
+
+车辆截图
+
+
+
+
+
+```
+UnlockRandomButtonObject
+```
+
+```
+closedSkinsOnCurrentPageIndexes
+```
+
+```
+skinsOnCurrentPageList
+```
+
+```
+productsByGroupDictionary[(StorePageName)currentPageIndex]
+```
+
+```
+StoreController.Database.GetProductsByPageDictionary(CurrentProductType);
+```
+
+```？
+CurrentProductType？
+```
+
+```
+Enum.GetValues(typeof(StorePageName))
+```
+
+```
+result.Add(page, GetProductsByPage(page, productType));
+```
+
+
+
+```
+skinsOnCurrentPageList[i].BehaviourType
+```
+
+![image-20211122182114550](C:\Users\xian\AppData\Roaming\Typora\typora-user-images\image-20211122182114550.png)
+
+
+
+
+
+打开商店暂停游戏？
+
+
+
+```
+private static List<StoreProduct> skinsOnCurrentPageList = new List<StoreProduct>();
+skinsOnCurrentPageList = productsByGroupDictionary[(StorePageName)currentPageIndex];
+```
+
+
+
+```
+currentPageIndex = (int)StoreController.GetProduct(StoreController.GetSelectedProductSkinID(CurrentProductType)).Page;
+```
+
+```
+private static Dictionary<StorePageName, List<StoreProduct>> productsByGroupDictionary;
+productsByGroupDictionary = StoreController.Database.GetProductsByPageDictionary(CurrentProductType);*3
+```
+
+
+
+
+
+```
+StoreProduct product = skinsOnCurrentPageList[itemToUnlockIndex];
+
+if (StoreController.TryToBuyProduct(product))
+{
+    ChangePreview(product);
+    UpdateCurrentPage(true);
+}
+```
+
+
+
+
+
+```
+            if (product.CanBeUnlocked())
+            {
+                product.Unlock();
+				savedData.UnlockProduct(product.ID);
+				StoreController.instance.Save();
+```
+
+
+
+```
+StoreController.SelectedCharacterSkinId
+```
+
+
+
+```
+StoreProduct ID
+```
+
+
+
+
+
+
+
+```
+public static List<StoreProduct> skinsOnCurrentPageList = new List<StoreProduct>();
+```
+
+单例还是要public
+
+
+
+
+
+```
+foreach (StorePageName page in Enum.GetValues(typeof(StorePageName)))
+{
+    result.Add(page, GetProductsByPage(page, productType));
+    
+}
+```
+
+```
+UnityEngine.Random.Range(0, lockedProductsList.Count)
+```
+
+
+
+重新生成时车有一辆车的位置变了
+

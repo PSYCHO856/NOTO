@@ -18,6 +18,10 @@ animation窗口中小竖条add event
 
 
 
+**两种创建方式** 一种点击物体 animation里create 一种project面板里创建 两种inspector里不一样 一种能用animator一种不能，只能直接animation.play
+
+
+
 #### Animator
 
 <font color='cornflowerblue'>Any State</font> 
@@ -34,3 +38,24 @@ lotteryItems[itemIndex].boxIcon.GetComponent<Animator>().SetTrigger("BoxOpenAnim
 
 trigger执行一次后自动设置为false
 
+
+
+初始化
+
+```
+transform.GetChild(0).GetComponent<Animator>().enabled = true;
+transform.GetChild(0).GetComponent<Animator>().Play("Blend Tree");
+transform.GetChild(0).GetComponent<Animator>().Update (0);
+```
+
+
+
+杆子开关
+
+animation looptime 关
+
+~~animator blendtree-write defaults 关~~
+
+状态机路径无条件 has exit time关才会正常播放完
+
+否则瞬移到动画最后一帧

@@ -16,3 +16,11 @@ null
 
 3其他的东西导致的
 
+
+
+manifest.json红报错-unity版本 网络问题 更改版本 删除文件 重新导入
+
+```
+//shuffle mobilekit
+```
+

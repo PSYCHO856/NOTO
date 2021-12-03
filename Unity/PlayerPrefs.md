@@ -28,3 +28,24 @@ HKEY_CURRENT_USER\ Unity Software\[company name]\[product name]
 
 []unity projectsetting里为准
 
+
+
+```
+persistentDataPath
+```
+
+```
+StoreData.dat
+```
+
+C:\Users\Administrator\AppData\LocalLow/company Name/priduct Name
+
+
+
+`%userprofile%\AppData\Local\Packages\[ProductPackageId]\LocalState\playerprefs.dat`.
+
+
+
+存档格式不一致 
+
+已经保存的存档数据中没有新增数据结构的部分 报错

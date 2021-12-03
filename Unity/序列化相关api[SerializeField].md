@@ -1,3 +1,7 @@
+[toc]
+
+
+
 https://blog.csdn.net/Fenglele_Fans/article/details/82668088
 
 
@@ -49,4 +53,13 @@ else
 {
     levelObstaclesSerializedProperty.RemoveFromVariableArrayAt(draggedLevelItemIndex);
 }
+```
+
+
+
+#### 静态变量编辑器内赋值方法
+
+```
+private static TextMeshProUGUI UnlockRandomPriceText => instance.unlockRandomPriceText;
+[SerializeField] TextMeshProUGUI unlockRandomPriceText;
 ```
