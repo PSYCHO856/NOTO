@@ -52,7 +52,7 @@ UICamera Z值 -1000 Z>-1000并在UICamera正交投影范围内 显示在UI上
 
 Screen Space-Camera
 
-
+适用于3d场景+ui 相机投向3d场景 ui在场景和相机之间显示， 特效等需要特殊处理 重力偏差等
 
 World Space
 
@@ -119,4 +119,16 @@ Fill 调整Rect Transform
         if (rewardSlider.value < RecordManager.Data.RewardSliderValue*0.01f) ProgressBar();
     }
 ```
+
+
+
+#### Image
+
+
+
+#### SpriteRenderer
+
+FLIP 翻转 只影响Sprite本身 不翻转碰撞体和其他子对象
+
+
 

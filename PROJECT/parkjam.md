@@ -217,3 +217,26 @@ UnityEngine.Random.Range(0, lockedProductsList.Count)
 
 重新生成时车有一辆车的位置变了
 
+![image-20211206193457681](C:\Users\xian\AppData\Roaming\Typora\typora-user-images\image-20211206193457681.png)
+
+#### store
+
+store database里勾is default
+
+savedata里加数据结构
+
+开始游戏level初始化select
+
+添加pool
+
+商店里选择切换
+
+
+
+
+
+打包
+
+playersetting里改YUNBU_ANDROID定义 ios
+
+关debug

@@ -30,3 +30,10 @@ parkjam商店ui
 
 改变锚点位置解决 并且不会使720*1280效果变化
 
+
+
+#### RectTransform
+
+```
+ShineTransform.sizeDelta = new Vector2(900, 900);
+```
