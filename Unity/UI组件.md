@@ -40,6 +40,15 @@ exp2 按钮使用非本身上的图片 Button Transition-Color Tint/Sprite Swap
 
 
 
+```
+settingsButton.onClick.AddListener(() =>
+{
+    UIManager.Open(UIConfig.Instance.Setting);
+});
+```
+
+
+
 #### Canvas
 
 Screen Space -OverLay
@@ -132,3 +141,35 @@ FLIP 翻转 只影响Sprite本身 不翻转碰撞体和其他子对象
 
 
 
+que1:
+
+Image Type:Filled-Fill Amount 英雄联盟技能cd效果 圆形进度条等
+
+
+
+
+
+#### 逻辑
+
+点击监听
+
+```
+namespace Controller
+{
+    public class UITouchDrag : MonoBehaviour, IDragHandler, IEndDragHandler
+    {
+        public UnityEvent<PointerEventData> OnTouchDrag;
+        public UnityEvent<PointerEventData> OnTouchEndDrag;
+        
+        public void OnDrag(PointerEventData data)
+        {
+            OnTouchDrag?.Invoke(data);
+        }
+
+        public void OnEndDrag(PointerEventData data)
+        {
+            OnTouchDrag?.Invoke(data);
+        }
+    }
+}
+```

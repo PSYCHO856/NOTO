@@ -40,7 +40,7 @@
 
 查找引用 
 
-全局查找 shift双击 ctrl+T
+**全局查找** shift双击 ctrl+T
 
 方法右键Refactor ReName可重命名 包括已经被引用的地方
 
@@ -58,7 +58,9 @@ shift+F12 找引用
 
 相同元素间快速移动 ctrl alt 上下 
 
-快速移动  alt 上下 
+**快速移动**  alt 上下 
+
+**菜单栏脚本切换**  alt 左右
 
 注释 comment ctrl+/ ctrl+k,c
 
@@ -70,6 +72,9 @@ shift+F12 找引用
 
 代码下移：shift+alt +方向键下
 
+**单行选中**：ctrl+alt+方向键右 先选中行尾
+
 多行选中：shift+方向键上下
 
 重构： Ctrl + Shift + R：
+

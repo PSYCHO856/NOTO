@@ -490,7 +490,7 @@ https://easings.net/cn
 
 
 
-
+#### 空延时操作
 
 float timeCount = 0.1f;
 DOTween.To(() => timeCount, a => timeCount = a, 0.1f, 0.1f).OnComplete(new TweenCallback(delegate
@@ -500,3 +500,32 @@ DOTween.To(() => timeCount, a => timeCount = a, 0.1f, 0.1f).OnComplete(new Tween
 
 
 
+#### 提前动画配置
+
+```
+private Tweener signInAnim;
+private void Awake()
+{
+   signInAnim = signInButton.transform.DOScale(1.1f, 1f).SetLoops(-1, LoopType.Yoyo).Pause();
+}
+public void UpdateSignInBtn()
+{
+   if (RecordManager.Data.loginDayNum > RecordManager.Data.GETRewardTimes)
+   {
+      signInAnim.Play();
+   }
+   else
+   {
+      signInButton.transform.localScale=Vector3.one;
+      signInAnim.Pause();
+   }
+}
+```
+
+```
+speedUpAnim = speedUpButton.transform.DOScale(0.85f, 2f).SetAutoKill(false).Pause();
+```
+
+```
+speedUpAnim.Rewind();动画回退时回调
+```

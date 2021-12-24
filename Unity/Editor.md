@@ -45,3 +45,44 @@ protected override void OnEnable()
     vibrationsProperties = serializedObject.FindProperty(vibrationsPropertyName).GetChildren();
 }
 ```
+
+
+
+
+
+![image-20211217112107250](C:\Users\xian\AppData\Roaming\Typora\typora-user-images\image-20211217112107250.png)
+
+![image-20211217112122253](C:\Users\xian\AppData\Roaming\Typora\typora-user-images\image-20211217112122253.png)
+
+```
+private void DrawToolButton()
+{
+    GUILayout.BeginHorizontal();
+    if (GUILayout.Button("Undo"))
+    {
+        Undo.PerformUndo();
+        GUIUtility.ExitGUI();
+    }
+
+    if (GUILayout.Button("Redo"))
+    {
+        Undo.PerformRedo();
+        GUIUtility.ExitGUI();
+    }
+
+    // if (GUILayout.Button("Reset"))
+    // {
+    //     Undo.CollapseUndoOperations(groupId);
+    //     Undo.PerformUndo();
+    //     GUIUtility.ExitGUI();
+    // }
+    
+    // if (GUILayout.Button("Clear"))
+    // {
+    //     levelMovableObjectsSerializedProperty.ClearArray();
+    //     levelObstaclesSerializedProperty.ClearArray();
+    //     selectedLevelSerializedObject.ApplyModifiedProperties();
+    // }
+    GUILayout.EndHorizontal();
+}
+```
