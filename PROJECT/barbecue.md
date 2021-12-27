@@ -1,4 +1,4 @@
-[toc]
+[TOC]
 
 目录[toc]
 
@@ -68,7 +68,7 @@ public bool IsDone => IsEmpty || (IsFull && Layers.Count == 1);
 
 
 
-
+串根据rect构造方法 从上往下生成，y坐标逐渐增加
 
 
 
