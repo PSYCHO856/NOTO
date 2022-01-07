@@ -418,7 +418,7 @@ s.SetLoops(-1, LoopType.Yoyo);
     //tips
     1. 不想直接播放，就不要选中 AutoPlay
     2. 如果非无限循环的动画如果以后想要重复播放，就不要选中 AutoKill
-    
+
     // 例子，cube向上旋转跳跃
     Move：							Rotate：
           AutoPlay  = No 					= No
@@ -431,26 +431,26 @@ s.SetLoops(-1, LoopType.Yoyo);
           To = (0,4,0)						(0,180,0)
           Relative = Yes					= No
     										Rotation Mode = Fast
-    
+
     ```
 2. 代码控制
-	```c#
-	
-	// 根据ID控制动画
-	// 播放
-	DOTween.Restart("id");
-	// 停止
-	DOTween.Complete("id");
-	
-	// 控制单个 DOTweenAnimation 组件
-	[SerializeField] private DOTweenAnimation bg;
-	bg.DORestart();
-	bg.DOPlayNext();		// 播放下一个Tween Animation
-	bg.DOPlayById(id);		// 播放指定ID的动画
-	bg.DOPlayAllById(id);	
-	bg.DORestartById();
-	bg.DORestartAllByID();
-	```
+  ```c#
+
+  // 根据ID控制动画
+  // 播放
+  DOTween.Restart("id");
+  // 停止
+  DOTween.Complete("id");
+
+  // 控制单个 DOTweenAnimation 组件
+  [SerializeField] private DOTweenAnimation bg;
+  bg.DORestart();
+  bg.DOPlayNext();		// 播放下一个Tween Animation
+  bg.DOPlayById(id);		// 播放指定ID的动画
+  bg.DOPlayAllById(id);	
+  bg.DORestartById();
+  bg.DORestartAllByID();
+  ```
 
 ## 常见问题
 
@@ -463,14 +463,14 @@ s.SetLoops(-1, LoopType.Yoyo);
 2. 原本同时执行两个Move方法，只会执行最新的一个动画命令
 
      DOBlendableMoveBy允许多个同时执行, 且它是增量动画，参数不是目标点，而是要移动的量
-     
+
 3. 好像单纯的挂载到物体上，不激活的动画也会生效
 
 4. playbackward要pause setautokill 先保存动画才能生效
 
 5. 使用时会莫名其妙影响其他的动画
 
-6. 
+6. ​
 
 #### 曲线
 
@@ -492,11 +492,13 @@ https://easings.net/cn
 
 #### 空延时操作
 
+```
 float timeCount = 0.1f;
-DOTween.To(() => timeCount, a => timeCount = a, 0.1f, 0.1f).OnComplete(new TweenCallback(delegate
-            {
-            //延时后的操作
-             }));
+DOTween.To(() => timeCount, a => timeCount = a, 0.1f, 1f).OnComplete(new TweenCallback(delegate
+{
+    //延时后的操作
+}));
+```
 
 
 
