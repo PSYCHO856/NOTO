@@ -1,4 +1,4 @@
-[toc]
+[TOC]
 
 
 
@@ -146,6 +146,12 @@ que1:
 Image Type:Filled-Fill Amount 英雄联盟技能cd效果 圆形进度条等
 
 
+
+#### Mask
+
+比较耗费性能
+
+一般在canvas group blocks raycasts或image的raycast target代替
 
 
 

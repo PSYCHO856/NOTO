@@ -531,3 +531,7 @@ speedUpAnim = speedUpButton.transform.DOScale(0.85f, 2f).SetAutoKill(false).Paus
 ```
 speedUpAnim.Rewind();动画回退时回调
 ```
+
+
+
+https://easings.net/cn
