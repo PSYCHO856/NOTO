@@ -535,3 +535,39 @@ speedUpAnim.Rewind();动画回退时回调
 
 
 https://easings.net/cn
+
+
+
+#### Dotween和Rect 
+
+变换inspector上相对位置 和锚点有关
+
+
+
+用dolocalmove 值为锚点在左上角的坐标有关
+
+
+
+```
+rectTransform.DOMove(new Vector3(x*Screen.width/width, y*Screen.height/height, z), 2);
+```
+
+```
+rectTransform.DOMove(new Vector3(x, y, z), 2);
+rectTransform.DOMove(new Vector3(x, Szcreen.height - y, z), 2);
+rectTransform.DOMove(new Vector3(Screen.width - x,y, z), 2);
+rectTransform.DOMove(new Vector3(Screen.width - x, Screen.height - y, z), 2);
+```
+
+```
+showInfo = transform.GetComponent<RectTransform>().DOMoveX((-186+245*1.5f)*Screen.width/1920, 1f).SetLoops(1, LoopType.Yoyo).Pause();
+```
+
+
+
+```
+//非一次播放动画 Restart
+trafficInAnim.Restart();
+```
+#### Sequence不好用
+

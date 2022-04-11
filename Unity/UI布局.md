@@ -50,3 +50,31 @@ inspector面板里
 
 ​	RectTransform显示的是anchoredPosition3D的坐标
 
+
+
+Width Height调用
+
+GetComponent<RectTransform>().sizeDelta = new Vector2(width, height);
+
+
+
+
+
+#### 控制尺寸
+
+canvas上canvas scaler组件
+
+ui scale mode - Scale With Screen Size
+
+1080*720
+
+制作ui素材也以此为准
+
+
+
+
+
+
+
+
+

@@ -67,6 +67,16 @@ World Space
 
 把UI当三维物体
 
+
+
+Pixel Perfect-Inherit 强制画布上的元素与像素对其。仅在Screen Space模式下显示。
+
+Override Sorting
+
+Sort Order
+
+
+
 #### Camera
 
 Projection
@@ -133,6 +143,8 @@ Fill 调整Rect Transform
 
 #### Image
 
+圆形Slider实现：Image Type改Filled Radital 360 Clockwise
+
 
 
 #### SpriteRenderer
@@ -179,3 +191,9 @@ namespace Controller
     }
 }
 ```
+
+#### Horizontal Layout Group
+
+强制刷新布局
+
+LayoutRebuilder.ForceRebuildLayoutImmediate(rectTransform);

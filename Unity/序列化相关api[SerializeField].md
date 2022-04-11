@@ -1,4 +1,4 @@
-[toc]
+[TOC]
 
 
 
@@ -62,4 +62,30 @@ else
 ```
 private static TextMeshProUGUI UnlockRandomPriceText => instance.unlockRandomPriceText;
 [SerializeField] TextMeshProUGUI unlockRandomPriceText;
+```
+
+
+
+
+
+编辑器赋值
+
+```
+[System.Serializable]
+public class ChallengeRewardData
+{
+    public int CoinCount = 0;
+    
+    // public RewardType RewardType = RewardType.Bottle;
+    // public int RewardIndex = 1;
+
+    public List<ChallengeItemReward> Rewards = new List<ChallengeItemReward>();
+}
+
+[System.Serializable]
+public class ChallengeItemReward
+{
+    public RewardType RewardType = RewardType.Bottle;
+    public int RewardIndex = 1;
+}
 ```
