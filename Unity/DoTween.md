@@ -566,6 +566,12 @@ showInfo = transform.GetComponent<RectTransform>().DOMoveX((-186+245*1.5f)*Scree
 
 
 ```
+unscheduledTrainList.GetComponent<RectTransform>().DOMoveY(0, duration);//终值 父物体坐标的Y值
+```
+
+
+
+```
 //非一次播放动画 Restart
 trafficInAnim.Restart();
 ```

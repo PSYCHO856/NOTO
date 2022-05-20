@@ -60,11 +60,17 @@ GetComponent<RectTransform>().sizeDelta = new Vector2(width, height);
 
 
 
-#### 控制尺寸
+#### 适配
 
 canvas上canvas scaler组件
 
 ui scale mode - Scale With Screen Size
+
+
+
+expand 灵活按宽度和高度适配
+
+
 
 1080*720
 

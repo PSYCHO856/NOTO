@@ -168,3 +168,73 @@ public class LevelScrollerController : MonoBehaviour, IEnhancedScrollerDelegate
 
 
 
+demo4
+
+```
+vScroller.JumpToDataIndex(jumpDataIndex, scrollerOffsetSlider.value, cellOffsetSlider.value, useSpacingToggle.isOn, vScrollerTweenType, vScrollerTweenTime, null, EnhancedScroller.LoopJumpDirectionEnum.Closest);
+```
+
+scrolleroffset 整个滑条框内位于最左还是最有
+
+celloffset 该单元格的位置 0.5显示一半
+
+
+
+1尽量更新 不要硬拷贝
+
+ 如果有1000个数据
+
+2有单元格数据改变 itemchange的时候
+
+应该找到该单元格 刷新 把数据加入当前缓存表
+
+不要刷新 reload enhancescroller底层
+
+
+
+
+
+```
+private void Start()
+{
+    LoadData(TrainsManager.Instance.TrainRoadDatasList.Count);
+    //动态限制cellview高度改变
+    transform.Find("Container").GetComponent<VerticalLayoutGroup>().childForceExpandHeight = false;
+}
+```
+
+
+
+
+que
+
+把controller 挂mask 挂image 置黑色透明度0.01 recttransform 
+
+image(viewport)之外的cell 在jumpto后会调用协程setactive false
+
+
+
+
+
+注释
+
+在一个显示区间内 子物体被setActive true 其他的隐藏或回收
+
+
+
+能否拖动的判断 ——有未完全显示的信息
+
+能否显示物体的条件 Scroll Rect 把Viewport里的组件置为None(Rect Transform)
+
+mask的作用 控制子物体显示区间
+
+
+
+scrolleroffset 在整个视窗内的偏移 0.5f为居中
+
+celloffset 子物体的位置 
+
+```
+scroller.JumpToDataIndex(Mathf.Clamp(index, 0, MaxDataElements - 1), 0.5f, 0.5f,
+    tweenType: snapTweenType, tweenTime: snapTweenTime);
+```

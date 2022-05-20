@@ -63,8 +63,6 @@ GetDataValue
 
 什么的随机
 
-相同型号车升满星后还会抽到吗
-
 时间系统 火车时刻
 
 已发车的影响？
@@ -83,13 +81,32 @@ linepage显示
 
 
 
+tableExtensions ListExtensions
+
+PassengerData GetWeightedRandomPassenger 根据权重获取
 
 
 
 
 
+trainsetdespage bottom数据优先与线路专精相同的车辆展示
+
+并显示颜色 其他线路展示灰色
 
 
 
 
 
+facilityrefitpage 跳转实现
+
+
+
+权重
+
+
+
+trainmanager platform id launchtrain
+
+
+
+车票计算

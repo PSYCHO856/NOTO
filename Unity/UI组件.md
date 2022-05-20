@@ -8,6 +8,12 @@
 
 固定到某一位置
 
+
+
+无法拖动问题
+
+viewport太大
+
 #### Button
 
 1interactable 
@@ -145,7 +151,7 @@ Fill 调整Rect Transform
 
 圆形Slider实现：Image Type改Filled Radital 360 Clockwise
 
-
+raycast target 设为检测单元 注意不要被遮挡——位于ui下面的取消勾选 保证检测的image在最上
 
 #### SpriteRenderer
 
