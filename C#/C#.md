@@ -1,3 +1,5 @@
+
+
 Null条件运算符?.和?[]
 
 A?.B?[C];
@@ -74,3 +76,52 @@ finally
 
 
 
+#### List
+
+Add 将单个元素添加至表尾
+
+AddRange 将一个集合所有元素添加至表尾
+
+
+
+
+
+#### Dictionary
+
+字典没有索引器是无序的,无法定义第一个
+
+[0]不能获取第一个元素
+
+
+
+#### this
+
+```
+public static TrainQualityData GetWeightedRandomTrain(this TbTrainQualities tbTrainQualities)
+{
+    if (trainQualityWeights == null)
+    {
+        trainQualityWeights = new List<int>();
+        foreach (var trainQualityData in tbTrainQualities.DataList)
+        {
+            trainQualityWeights.Add(trainQualityData.Weight);
+        }
+    }
+
+    int index = tbTrainQualities.DataList.WeightedRandom(trainQualityWeights);
+    return tbTrainQualities.DataList[index];
+}
+```
+
+```
+TableManager.TbTrainQualities.GetWeightedRandomTrain();
+```
+
+
+
+
+```
+.ToString("0.##")
+```
+
+https://blog.csdn.net/luckzhang_la/article/details/9136111

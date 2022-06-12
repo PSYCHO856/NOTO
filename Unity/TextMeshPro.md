@@ -1,4 +1,4 @@
-[toc]
+[TOC]
 
 
 
@@ -53,3 +53,41 @@ hdr高光动态渲染-一张图亮部和暗部都很清晰 多张图片曝光叠
 #### project settings
 
 ![image-20211202150811605](C:\Users\xian\AppData\Roaming\Typora\typora-user-images\image-20211202150811605.png)
+
+
+
+
+
+
+
+```
+不用inspector加i2localize
+// infoText.text =
+//     LocalizationManager.GetTranslation(districtController.FacilityControllers[_facilityId].TbFacilityData
+//         .IDTDesc);
+用加
+I2.Loc.Localize localize = infoText.GetComponent<Localize>();
+localize.Term = "";
+localize.Term = districtController.FacilityControllers[_facilityId].TbFacilityData
+    .IDTDesc;
+```
+
+
+
+
+
+#### 富文本字符串模板
+
+Loc.cs
+
+```
+public static string GetModelText<T, U>(string term, T param0, U param1)
+{
+    if( LocalizationManager.GetTranslation(term) == default ){
+        Debug.LogWarning( $" IDT :{term} is Null "  );
+        return "";
+    }
+    return string.Format(LocalizationManager.GetTranslation(term), param0.ToString(), param1.ToString());
+}
+```
+

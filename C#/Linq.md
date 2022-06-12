@@ -17,3 +17,15 @@ DataRow row=dt.Rows.Cast<DataRow>().Single();
 object[] obj = {1,23,4,5,555,"aaa","bbb" };
       int max=obj.OfType<int>().Max();
 
+
+字典遍历 非linq有关内容
+
+```
+foreach (var (_,platformInfo) in PlatformInfos)
+{
+    if (platformInfo.TrainId > 0)
+    {
+        SpawnTrain(platformInfo.Id, platformInfo.TrainId);
+    }
+}
+```

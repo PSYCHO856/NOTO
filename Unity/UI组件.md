@@ -1,4 +1,4 @@
-[toc]
+[TOC]
 
 
 
@@ -7,6 +7,12 @@
 #### PanelScroll
 
 固定到某一位置
+
+
+
+无法拖动问题
+
+viewport太大
 
 #### Button
 
@@ -66,6 +72,16 @@ Screen Space-Camera
 World Space
 
 把UI当三维物体
+
+
+
+Pixel Perfect-Inherit 强制画布上的元素与像素对其。仅在Screen Space模式下显示。
+
+Override Sorting
+
+Sort Order
+
+
 
 #### Camera
 
@@ -133,7 +149,9 @@ Fill 调整Rect Transform
 
 #### Image
 
+圆形Slider实现：Image Type改Filled Radital 360 Clockwise
 
+raycast target 设为检测单元 注意不要被遮挡——位于ui下面的取消勾选 保证检测的image在最上
 
 #### SpriteRenderer
 
@@ -146,6 +164,12 @@ que1:
 Image Type:Filled-Fill Amount 英雄联盟技能cd效果 圆形进度条等
 
 
+
+#### Mask
+
+比较耗费性能
+
+一般在canvas group blocks raycasts或image的raycast target代替
 
 
 
@@ -173,3 +197,9 @@ namespace Controller
     }
 }
 ```
+
+#### Horizontal Layout Group
+
+强制刷新布局
+
+LayoutRebuilder.ForceRebuildLayoutImmediate(rectTransform);

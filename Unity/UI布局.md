@@ -1,3 +1,7 @@
+[TOC]
+
+
+
 打包图片，非2幂次贴图导致无法压缩 包体多了十几M 渲染性能下降
 
 ##### 要打图集的无所谓  单独使用的贴图长宽高必须用2的幂次
@@ -37,3 +41,46 @@ parkjam商店ui
 ```
 ShineTransform.sizeDelta = new Vector2(900, 900);
 ```
+
+
+
+inspector面板里
+
+​	Transform显示的是localPosition的坐标
+
+​	RectTransform显示的是anchoredPosition3D的坐标
+
+
+
+Width Height调用
+
+GetComponent<RectTransform>().sizeDelta = new Vector2(width, height);
+
+
+
+
+
+#### 适配
+
+canvas上canvas scaler组件
+
+ui scale mode - Scale With Screen Size
+
+
+
+expand 灵活按宽度和高度适配
+
+
+
+1080*720
+
+制作ui素材也以此为准
+
+
+
+
+
+
+
+
+

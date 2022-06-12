@@ -1,6 +1,6 @@
 ## 动画状态机
 
-[toc]
+[TOC]
 
 
 
@@ -59,3 +59,48 @@ animation looptime 关
 状态机路径无条件 has exit time关才会正常播放完
 
 否则瞬移到动画最后一帧
+
+
+
+例子1：
+
+豪车模拟器油门
+
+动画复位
+
+```C#
+[SerializeField] private Animator paddleAnimator;
+private Vector3 paddlePos;
+private bool firstOpen = true;
+//注意ui坐标受到animator影响无法初始化 自动变成动画最后一帧的位置 所以需要重置动画
+public override void OnOpen()
+{
+   base.OnOpen();
+   if (firstOpen)
+   {
+      firstOpen = false;
+      
+      paddlePos = paddleBottom.transform.parent.GetComponent<RectTransform>().anchoredPosition3D;
+   }
+   
+   paddleBottom.transform.parent.GetComponent<RectTransform>().anchoredPosition3D = paddlePos;
+   // paddleAnimator.enabled = true;
+}
+
+public override void OnClose()
+{
+   base.OnClose();
+   ResetAnimator();
+   // paddleAnimator.enabled = false;
+}
+//动画复位
+private void ResetAnimator()
+{
+   paddleAnimator.Play("State");
+}
+```
+
+https://blog.csdn.net/weixin_43737238/article/details/103585404 inspector的ui坐标获取
+
+https://www.cnblogs.com/zhaoqingqing/p/9883716.html 动画状态机重置
+
