@@ -66,8 +66,8 @@ hdr高光动态渲染-一张图亮部和暗部都很清晰 多张图片曝光叠
 //     LocalizationManager.GetTranslation(districtController.FacilityControllers[_facilityId].TbFacilityData
 //         .IDTDesc);
 用加
-I2.Loc.Localize localize = infoText.GetComponent<Localize>();
-localize.Term = "";
+I2.Loc.Localize localize ??= infoText.GetComponent<Localize>();
+//localize.Term = "";
 localize.Term = districtController.FacilityControllers[_facilityId].TbFacilityData
     .IDTDesc;
 ```
@@ -91,3 +91,6 @@ public static string GetModelText<T, U>(string term, T param0, U param1)
 }
 ```
 
+```
+Canvas.camera=Camera.main
+```

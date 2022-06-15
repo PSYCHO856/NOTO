@@ -238,3 +238,6 @@ celloffset 子物体的位置
 scroller.JumpToDataIndex(Mathf.Clamp(index, 0, MaxDataElements - 1), 0.5f, 0.5f,
     tweenType: snapTweenType, tweenTime: snapTweenTime);
 ```
+
+
+transform.Find("Container").GetComponent<HorizontalLayoutGroup>().childForceExpandWidth = false;

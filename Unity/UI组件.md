@@ -57,7 +57,9 @@ settingsButton.onClick.AddListener(() =>
 
 #### Canvas
 
-Screen Space -OverLay
+##### Screen Space -OverLay 
+
+（2d UIManager 
 
 Depth值大于100 （相机最大Depth=100） 永远显示在最前面
 
@@ -65,7 +67,9 @@ UICamera Z值 -1000 Z>-1000并在UICamera正交投影范围内 显示在UI上
 
 
 
-Screen Space-Camera
+##### Screen Space-Camera
+
+（和scene界面成角度的
 
 适用于3d场景+ui 相机投向3d场景 ui在场景和相机之间显示， 特效等需要特殊处理 重力偏差等
 
@@ -203,3 +207,7 @@ namespace Controller
 强制刷新布局
 
 LayoutRebuilder.ForceRebuildLayoutImmediate(rectTransform);
+
+```
+LayoutRebuilder.ForceRebuildLayoutImmediate(upgradeBtnRect);
+```

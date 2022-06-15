@@ -577,3 +577,12 @@ trafficInAnim.Restart();
 ```
 #### Sequence不好用
 
+
+
+#### DOAnchorPosY
+
+```
+bRect = buildPlus.GetComponent<RectTransform>();
+bRectTweener = bRect.DOAnchorPosY(arrorMoveHeight, 0.5f)
+    .SetEase(DG.Tweening.Ease.Linear).SetLoops(-1, LoopType.Yoyo).Pause().SetAutoKill(false);
+```
