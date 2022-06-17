@@ -1,4 +1,4 @@
-[toc]
+[TOC]
 
 ### Rider使用
 
@@ -78,3 +78,16 @@ shift+F12 找引用
 
 重构： Ctrl + Shift + R：
 
+#### Resharp
+
+F2重命名
+
+Ctrl+B 查找定义
+
+Ctrl+E 最近文件
+
+
+
+#### Vim
+
+https://www.csdn.net/tags/MtTaEg0sMDM5NzMtYmxvZwO0O0OO0O0O.html
