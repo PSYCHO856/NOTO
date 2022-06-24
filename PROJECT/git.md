@@ -80,5 +80,9 @@ https://www.bilibili.com/video/BV1fh411d7zi?spm_id_from=333.337.search-card.all.
 
 
 
+#### 廖雪峰
+
+git管理的是修改 svn只需要add一次
+
 
 

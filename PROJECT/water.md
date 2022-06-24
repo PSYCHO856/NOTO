@@ -92,3 +92,77 @@ base.OnOpen();
 
 
 xiaomi android树冲突
+
+
+
+
+
+oncreate
+
+initad
+
+
+
+onstart里有个
+
+ShowFullScreenVideo
+
+
+
+permission？页面在哪
+
+
+
+
+
+手机权限请求 在manifest里
+
+电话权限
+
+android.permission.READ_PHONE_STATE
+
+https://blog.csdn.net/fenggering/article/details/53432401
+
+
+
+1安卓代码在unity plugin下 
+
+2找不到adsdk getdeviceid 找不到广告初始化位置
+
+3manifest里注释掉
+
+```
+READ_PHONE_STATE
+```
+
+没用
+
+
+
+
+
+
+
+#### sdk接入
+
+观察给的demo工程
+
+执行顺序
+
+privacyActivity 里面弹申请隐私弹窗 
+
+application 初始化vivo广告sdk
+
+mainActivity 
+
+
+
+
+
+application里有oncreate等等生命周期函数
+
+```
+implementation 'com.android.support:support-v4:28.0.0'
+implementation 'com.android.support:recyclerview-v7:28.0.0'
+implementation 'com.android.support:appcompat-v7:28.0.0'
+```

@@ -146,3 +146,77 @@ public class SignInPage : UIBasePage
     }
 }
 ```
+
+
+
+
+
+
+2
+
+```
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using DG.Tweening;
+using MobileKit;
+using TMPro;
+using AdsManager = MobileKit.AdsManager;
+using Ease = DG.Tweening.Ease;
+
+namespace Railway
+{
+    public class DiamondCostPage : UIBasePage
+    {
+        [SerializeField] private Button clickNormalBtn;
+        [SerializeField] private Button clickCloseBtn;
+        [SerializeField] private Button closeBtn;
+        [SerializeField] private TextMeshProUGUI coinText;
+
+        private int diamondCost;
+        private void Awake()
+        {
+            clickNormalBtn.onClick.AddListener(OnClick);
+
+            clickCloseBtn.onClick.AddListener((() => base.OnClose()));
+            closeBtn.onClick.AddListener((() => base.OnClose()));
+        }
+
+        public override void OnOpen(int temp)
+        {
+            diamondCost = temp;
+            coinText.text = Loc.GetModelText("Shop15", diamondCost);
+            if (RecordManager.Data.Diamond >= diamondCost)
+            {
+                clickNormalBtn.GetComponent<Image>().sprite = UIConfig.Instance.GetSpriteByName("button_big_blue");
+                clickNormalBtn.enabled = true;
+            }
+            else
+            {
+                clickNormalBtn.GetComponent<Image>().sprite = UIConfig.Instance.GetSpriteByName("button_big_dis");
+                clickNormalBtn.enabled = false;
+            }
+        }
+
+        private void OnClick()
+        {
+            base.OnClose();
+            RecordManager.Data.Diamond -= diamondCost;
+            
+            AnalyticsUtil.OnDiamondUsed(diamondCost);
+        }
+
+    }
+}
+```
+
+
+
+页面操作结束后可以执行回调
+
+```
+(UIManager.Open(UIConfig.Instance.NormalConfirm) as NormalConfirmPage).Register(OnSlotRVWatched);
+```

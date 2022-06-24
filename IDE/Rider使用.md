@@ -91,3 +91,26 @@ Ctrl+E 最近文件
 #### Vim
 
 https://www.csdn.net/tags/MtTaEg0sMDM5NzMtYmxvZwO0O0OO0O0O.html
+
+
+
+ctrl+alt+L 代码格式化
+
+
+
+哪些改删哪些不该删
+
+没找到拨打电话的call权限哪里申请的
+
+
+
+sdk初始化完成 调整了sdk初始化时间
+
+loadad 广告加载
+
+在看原项目和demo的广告方法
+
+
+
+代码混淆proguard-user.txt
+
