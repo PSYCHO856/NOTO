@@ -6,9 +6,9 @@
 - 超链接：Ctrl+K
 - 图像：Ctrl+Shift+I
 - 清除样式：Ctrl+
-
 - 查找：Ctrl+F
 - 查找下一个：F3
 - 查找上一个：Shift+F3
 - 替换：Ctrl+H
+- 目录：[toc]
 

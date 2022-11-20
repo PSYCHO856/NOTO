@@ -8,85 +8,19 @@ svn://feamberhz.synology.me/MiniGame2021
 
 
 
-cursing
+居家整理
 
-### ~~bug! nextlevel~~
+c#面向对象语法
 
-因为leveldata不对耽误一个小时 更新svn就好了
+复习接口 部分类 
 
+装箱拆箱
 
+性能
 
+看书
 
-
-1recorddata数据初始化 怎么调用PuzzleDatabase数据？
-
-游戏存档数据RecordData和游戏固定数据LevelDataBase是两个模块，初始化时不应互相调用
-
-![QQ图片20210930164104](C:\Users\xian\Desktop\QQ图片20210930164104.png)
-
-
-
-
-
-~~3challengepage prefab打不开 scale0了~~altshift5
-
-4TimeController.StartGame();
-
-5page为什么不singleton
-
-mvc
-
-6反射
-
-7addlisten最好add具名方法，具名方法才能remove
-
-8代码架构上有问题
-
-
-
-9RectTransformUtility.WorldToScreenPoint api?
-
-![image-20211002155042259](C:\Users\xian\AppData\Roaming\Typora\typora-user-images\image-20211002155042259.png)
-
-
-
-
-
-
-
-
-
-豪车
-
-整理ui框架
-
-对象池使用
-
-scrollbar实现
-
-
-
-新手引导使用方法
-
-
-
-像slot一样 整合提示框
-
-抽奖 点击按钮 看完广告后点击提示窗确认后开始抽奖
-
-
-
-
-
-
-
-**安卓**
-
-**Gradle系统**
-
-
-
-
+代码大全 工程设计类
 
 
 

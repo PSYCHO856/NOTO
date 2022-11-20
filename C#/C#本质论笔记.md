@@ -48,7 +48,43 @@ string类型不可变，修改时要将结果赋值给本身text=text.ToUpper();
 
 
 
+字符串是不可变的对象。当我们必须执行一些操作来更改字符串或附加新字符串时，它会清除字符串对象的旧值，并在内存中创建一个新实例以将新值保存在字符串对象中。 作者：疯狂滴小黑 https://www.bilibili.com/read/cv17582918 出处：bilibili
+
+```
+using System;
+namespace demoapp
+{
+    class StringClass
+    {
+        public static void main(String[] {
+            string val = "Hello";
+            //creates a new instance of the string
+            val += "World";
+            Console.WriteLine(val);
+        }
+    }
+} 作者：疯狂滴小黑 https://www.bilibili.com/read/cv17582918 出处：bilibili
+
+using System;
+using System.Text;
+namespace demoapp
+{
+    class StringClass
+    {
+        public static void main(String[] {
+            StringBuilder val = new StringBuilder("Hello");
+            val.Append("World");
+            Console.WriteLine(val);
+        }
+    }
+} 作者：疯狂滴小黑 https://www.bilibili.com/read/cv17582918 出处：bilibili
+```
+
 #### System.Text.StringBuilder
+
+
+
+
 
 String 对象是不可改变的。每次使用 System.String 类中的方法之一时，都要在[内存](https://so.csdn.net/so/search?q=%E5%86%85%E5%AD%98&spm=1001.2101.3001.7020)中创建一个新的字符串对象，这就需要为该新对象分配新的空间。在需要对字符串执行重复修改的情况下，与创建新的 String 对象相关的系统开销可能会非常昂贵。如果要修改字符串而不创建新的对象，则可以使用 System.Text.StringBuilder 类。例如，当在一个循环中将许多字符串连接在一起时，使用 StringBuilder 类可以提升性能。
 

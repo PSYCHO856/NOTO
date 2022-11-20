@@ -29,3 +29,25 @@ foreach (var (_,platformInfo) in PlatformInfos)
     }
 }
 ```
+
+
+
+
+
+```
+public class Devices
+{
+    public void GetData()
+    {
+        List<string> mobiles = new List<string>() {
+            "Iphone","Samsung","Nokia","MI"
+        };
+
+        //linq syntax
+        var result = from s in mobiles
+            where s.Contains("Nokia")
+            select s;
+
+    }
+} 作者：疯狂滴小黑 https://www.bilibili.com/read/cv17582918 出处：bilibili
+```
