@@ -110,3 +110,48 @@ trainmanager platform id launchtrain
 
 
 车票计算
+
+
+
+
+
+上座率
+
+指派界面
+
+infopage刷新
+
+```
+TrainsManager.Instance.RefreshCustomFlowInClockList();
+SeatPercent = TrainsManager.Instance.CalculateSeatPercentInClock(trainRecordData.roadClock, true,false,true);
+```
+
+appointpage 
+
+从未指派指派
+
+从指派指派
+
+```
+TrainsManager.Instance.CalculateSeatPercentInClock(trainRecordData.roadClock, true, true);
+TrainsManager.Instance.CalculateSeatPercentInClock(clock, true);
+
+trainRecordData.roadClock = clock;
+trainRecordData.isOnTimeTable = true;
+
+// TrainsManager.Instance.RefreshAllClockSeatPercent();
+TrainsManager.Instance.RefreshLastClockCustomFlows();
+```
+
+调度界面
+
+
+
+提高流量
+
+
+
+
+
+
+

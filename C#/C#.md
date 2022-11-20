@@ -125,3 +125,9 @@ TableManager.TbTrainQualities.GetWeightedRandomTrain();
 ```
 
 https://blog.csdn.net/luckzhang_la/article/details/9136111
+
+
+
+# Dictionary.TryGetValue(id，out  result)
+
+ContainsKey
