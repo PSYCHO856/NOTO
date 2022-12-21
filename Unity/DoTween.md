@@ -418,7 +418,7 @@ s.SetLoops(-1, LoopType.Yoyo);
     //tips
     1. 不想直接播放，就不要选中 AutoPlay
     2. 如果非无限循环的动画如果以后想要重复播放，就不要选中 AutoKill
-
+    
     // 例子，cube向上旋转跳跃
     Move：							Rotate：
           AutoPlay  = No 					= No
@@ -431,7 +431,7 @@ s.SetLoops(-1, LoopType.Yoyo);
           To = (0,4,0)						(0,180,0)
           Relative = Yes					= No
     										Rotation Mode = Fast
-
+    
     ```
 2. 代码控制
   ```c#
@@ -470,7 +470,7 @@ s.SetLoops(-1, LoopType.Yoyo);
 
 5. 使用时会莫名其妙影响其他的动画
 
-6. ​
+6. 
 
 #### 曲线
 

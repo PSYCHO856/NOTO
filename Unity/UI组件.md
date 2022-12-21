@@ -57,7 +57,7 @@ settingsButton.onClick.AddListener(() =>
 
 #### Canvas
 
-##### Screen Space -OverLay 
+##### Screen Space -OverLay 永远在游戏对象之上
 
 （2d UIManager 
 
@@ -67,13 +67,13 @@ UICamera Z值 -1000 Z>-1000并在UICamera正交投影范围内 显示在UI上
 
 
 
-##### Screen Space-Camera
+##### Screen Space-Camera 对象可在canvas前后
 
 （和scene界面成角度的
 
 适用于3d场景+ui 相机投向3d场景 ui在场景和相机之间显示， 特效等需要特殊处理 重力偏差等
 
-World Space
+**World Space** **canvas是3d物体**
 
 把UI当三维物体
 
@@ -211,3 +211,41 @@ LayoutRebuilder.ForceRebuildLayoutImmediate(rectTransform);
 ```
 LayoutRebuilder.ForceRebuildLayoutImmediate(upgradeBtnRect);
 ```
+
+
+
+
+
+#### inputfield
+
+Interactable ：当前输入框是否可用
+Character Limit（字符数量限制）：限定此输入域最大输入的字符数，0为不限制。
+
+Events
+
+On Value Changed：值改变时触发消息。
+End Edit：结束编辑时触发消息。
+
+
+
+    private string valueText;
+    private string endValue;
+    void Awake()
+    {
+        transform.GetComponent<InputField>().onValueChanged.AddListener(ChangedValue);//用户输入文本时就会调用
+        transform.GetComponent<InputField>().onEndEdit.AddListener(EndValue);//文本输入结束时会调用
+    }
+    
+    //用户输入时的变化
+    private void ChangedValue(string value)
+    {
+        valueText = value;//将用户输入的值赋值给内部的空字符串，我们可以将其来进行后续的操作
+        Debug.Log("输入了" + value);
+    }
+    private void EndValue(string value)
+    {
+        endValue = value;//捕捉数据，方便后续操作
+        Debug.Log("最终内容" + value);
+    }
+
+# 
