@@ -82,7 +82,34 @@ namespace demoapp
 
 #### System.Text.StringBuilder
 
+String a1 = "abc";　　//分配固定的内存大小
+a1 += "def";　　//创建新的内存分配a1，代价比较昂贵
 
+StringBuilder sb = new StringBuilder(20);　　//指定分配大小
+sb.Append('abc');　　//分配到堆区
+sb.Append('def');　　//不会被销毁，而是直接追加到后面。
+
+namespace 计算1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("hello");
+            sb.Append("world");
+            sb.Insert(5, "_我是插入的字符_");
+            Console.WriteLine(sb);
+
+​     Console.ReadKey();
+
+​			}
+
+​	}
+
+}
+
+remove replace
 
 
 
