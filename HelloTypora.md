@@ -37,7 +37,7 @@ static Dictionary<string, QuestionConfig> datas
 
 2电子秤点击
 
-3环刀放回试验台
+3
 
 4在环刀内壁涂一薄层凡士林
 
@@ -106,3 +106,107 @@ ui
 住房300+280
 
 杭州临安银行
+
+
+
+给ui出现隐藏加默认淡入出
+
+镜头跟随lateupdate 放大缩小
+
+动画平滑
+
+实验室调亮
+
+
+
+15号
+
+登录 学号名字
+
+导出报表2
+
+实验4
+
+边缘光
+
+桌子换颜色
+
+透明材质
+
+pbr反光
+
+
+
+
+
+```
+Tags { "RenderType"="Opaque" }
+LOD 100
+
+Pass
+{
+    CGPROGRAM
+    #pragma vertex vert
+    #pragma fragment frag
+    #pragma multi_compile _ _DISSOLVEEFFECT_ON
+    //注意，这里要一定要以_ON结尾
+ 
+
+    #include "UnityCG.cginc"
+
+    struct appdata
+    {
+        float4 vertex : POSITION;
+        float2 uv : TEXCOORD0;
+    };
+
+    struct v2f
+    {
+        float2 uv : TEXCOORD0;
+        float4 vertex : SV_POSITION;
+    };
+
+    sampler2D _MainTex;
+    float4 _MainTex_ST;
+    sampler2D _DissolveTex;
+    float4 _DissolveTex_ST;
+    float _Clip;
+    float4 _RampColor;
+    float _DissolveEffect;
+
+
+    v2f vert (appdata v)
+    {
+        v2f o;
+        o.vertex = UnityObjectToClipPos(v.vertex);
+        o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+        UNITY_TRANSFER_FOG(o,o.vertex);
+        return o;
+    }
+
+    fixed4 frag (v2f i) : SV_Target
+    {
+        // sample the texture
+        fixed4 col = tex2D(_MainTex, i.uv);         
+    #if _DISSOLVEEFFECT_ON
+        i.uv = TRANSFORM_TEX(i.uv,_DissolveTex);
+        //i.uv = i.uv * _DissolveTex_ST.xy + _DissolveTex_ST.zw; 上面那句代码相当于这局代码的简写.
+        fixed4 dissolveCol = tex2D(_DissolveTex,i.uv);        
+        clip(dissolveCol.r - _Clip);
+
+        fixed maxEdge = _Clip + 0.1;            
+        if(dissolveCol.r < maxEdge)
+        {
+            col += _RampColor * smoothstep(_Clip,maxEdge,dissolveCol.r);
+        }
+    #endif
+    
+        return col;
+    }
+    ENDCG
+}
+```
+
+```
+Unlit/NewUnlitShader
+```

@@ -114,3 +114,10 @@ loadad 广告加载
 
 代码混淆proguard-user.txt
 
+
+
+
+
+#### 代码规范格式化
+
+ctrl+alt+L
