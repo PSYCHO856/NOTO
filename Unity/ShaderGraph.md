@@ -101,6 +101,10 @@ Screen Postion节点
 
 
 
+自制PBR shader
+
+todo白平衡 用于贴图+maincolor之后 可添加色温色调效果 饱和度
+
 
 
 
