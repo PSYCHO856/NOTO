@@ -256,6 +256,10 @@ End Edit：结束编辑时触发消息。
 
 #### EventTrigger
 
+Canvas Group
+
+alpha=0透明还是影响鼠标点击检测 要setactive false
+
 
 
 

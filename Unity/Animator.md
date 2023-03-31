@@ -4,7 +4,7 @@
 
 
 
-#### Animation
+### Animation
 
 点击有animator组件的prefab，animation窗口才会显示
 
@@ -22,7 +22,22 @@ animation窗口中小竖条add event
 
 
 
-#### Animator
+
+
+#### 动画数组
+
+**Animation anim= Obj.GetComponent();//拿到animation组件
+anim.clip = anim.GetClip(“2-1”);//获取对应名字的动画片段并赋值给当前片段 anim.clip
+//然后就可以播放啦
+anim.Play();**
+
+
+
+
+
+
+
+### Animator
 
 <font color='cornflowerblue'>Any State</font> 
 
