@@ -540,6 +540,14 @@ https://easings.net/cn
 
 #### Dotween和Rect 
 
+```
+RectTransform rt = expFinishObj.GetComponent<RectTransform>();
+finishTween = rt.DOLocalMoveX(
+    rt.anchoredPosition.x-rt.sizeDelta.x, 
+    2f).Pause().SetAutoKill(false);
+    //好使 阵列实验
+```
+
 变换inspector上相对位置 和锚点有关
 
 
