@@ -52,6 +52,36 @@ Main Camera上CinemachineBrain组件 自动查找最后添加的(setActive为tru
 
 
 
+#### 快速聚焦
+
+ctrl shift f聚焦
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 https://www.bilibili.com/video/BV1Bg411A7xz?from=search&seid=12825678121902883025&spm_id_from=333.337.0.0

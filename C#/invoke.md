@@ -10,3 +10,12 @@ OnProductSelected?.Invoke(product);
 
 所有的委托类型都有一个编译器生成的`Invoke`方法。 C＃允许你调用委托本身作为调用此方法的快捷方式。
 
+
+
+xxl
+
+```
+Occurrence
+    .Instance
+    .ExecuteEvent("ToolColor", "FertilizerBtn")
+```

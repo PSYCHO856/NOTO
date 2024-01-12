@@ -15,3 +15,10 @@ vector3转quaternion
  transform.rotation = rotation;
 ```
 
+
+
+红轴为x轴、right轴，可用[Vector3](https://so.csdn.net/so/search?q=Vector3&spm=1001.2101.3001.7020).right表示
+
+绿轴为y轴、up轴，可用Vector3.up表示
+
+蓝轴为z轴、forward轴，可用Vector3.forward表示

@@ -1,6 +1,6 @@
 
 
-
+[toc]
 
 
 
@@ -220,3 +220,22 @@ namespace Railway
 ```
 (UIManager.Open(UIConfig.Instance.NormalConfirm) as NormalConfirmPage).Register(OnSlotRVWatched);
 ```
+
+
+
+
+
+
+
+#### 3d模型拖动 ui交互
+
+https://blog.csdn.net/weixin_43818160/article/details/126100473
+
+
+
+#### 3d物体显示在ui前
+
+3d物体加layer 放在canvas里
+
+
+

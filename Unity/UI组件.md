@@ -16,6 +16,10 @@ viewport太大
 
 #### Button
 
+inspector里加event Trigger组件实现多种监听功能
+
+
+
 1interactable 
 
 
@@ -214,6 +218,16 @@ LayoutRebuilder.ForceRebuildLayoutImmediate(upgradeBtnRect);
 
 
 
+想实现背包效果，可点击使用不改变排列显示效果
+
+Child Force Expand 点掉
+
+调整 Spacing 为单个子物体大小
+
+
+
+
+
 
 
 #### inputfield
@@ -265,4 +279,36 @@ alpha=0透明还是影响鼠标点击检测 要setactive false
 #### Canvas Group
 
 https://blog.csdn.net/zhurouwanzi/article/details/129231342
+
+
+
+#### Toggle
+
+小龙 单独写事件类，每个toggle按名称注册一个事件
+
+
+
+#### 自动排列组件刷新
+
+![img](file:///E:\qq\qqgerenshuju\347800933\Image\C2C\%YA~XPVN1F794D0SRS`I`42.png)
+
+
+
+#### gridlayoutgroup
+
+我草拟吗 先gameobject.setactive(false)就能destory了
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

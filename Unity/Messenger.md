@@ -1,8 +1,12 @@
 [toc]
 
+```
+MessageCenter.Instance.RegiseterMessage(EMsg.Switch_Component, this, MoveAction); //注册消息
+```
 
-
-
+```
+Messenger<string>.AddListener(GameEvent.ON_CLOCK_SHOW, ShowClock);
+```
 
 有一种很常见的思想，叫委托，顾名思义就是A委托B做A想做的事情，具体实现就是A定义好函数(实现A想做的)，然后把该函数以一种特殊的形式告知B，B来调用
 

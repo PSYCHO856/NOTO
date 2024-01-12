@@ -226,7 +226,15 @@ transform.DORotate(new Vector3(0, 90, 0), 2);	// 旋转到给定的值，改变�
 transform.DORotateQuaternion(new Quaternion(0.1f, 0.1f, 0.1f, 0.1f), 2); // 旋转到给定的值，改变四元数
 transform.DOLocalRotate(new Vector3(0, 90, 0), 2);
 transform.DOLocalRotateQuaternion(new Quaternion(0.1f, 0.1f, 0.1f, 0.1f), 2);
+
+
+
+
+//实现相机平滑运镜效果
 transform.DOLookAt(new Vector3(0, 0, 0), 2);	// 平滑的让自身的z轴正方向指向目标点
+
+
+
 
 transform.DOScale(new Vector3(2, 2, 2), 2);
 transform.DOScaleX(3, 2);
@@ -601,3 +609,7 @@ bRectTweener = bRect.DOAnchorPosY(arrorMoveHeight, 0.5f)
 有动画localScale容易出问题
 
 建议gameobject.setactive
+
+#### 闪烁
+
+.SetLoops(-1,LoopType.Yoyo);

@@ -102,6 +102,10 @@ movableRenderer.isVisible在相机之外 看不见 false
 
 
 
+#### 获取物体材质球
+
+MeshRenderer
+
 
 
 
