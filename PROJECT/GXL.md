@@ -244,9 +244,14 @@ var v= DeepCopyEx.DeepCopyByReflection<GuideConfig>(itor.Value);
 
 
 
+#### ui遮挡功能 点击不穿透影响3d物体
 
-
-
+```
+if (EventSystem.current.IsPointerOverGameObject())
+{
+    return;
+}
+```
 
 
 

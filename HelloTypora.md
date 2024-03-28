@@ -2,6 +2,8 @@ Typora软件和Markdown语
 
 ![image-20211201191256453](C:\Users\xian\AppData\Roaming\Typora\typora-user-images\image-20211201191256453.png)
 
+D:\OthersProjects\软件加密
+
 
 
 \\192.168.110.226\阵列仿真安装包\阵列水利实验仿真软件
@@ -16,7 +18,21 @@ D:\githubrepository\NormalTemplate
 Debug.Log(" " + );
 ```
 
+```
+btnKnow =  UtilityTool.FindChild<Button>(transform, "btnKnow");
+btnKnow.onClick.AddListener(() =>
+{
+    
+});
+```
 
+蔬菜技能大赛
+
+oL/Qh6Hmwk5fzIYRdoYHnk9/jm2C3N2XqmDJRjFmGRxrFGw+/Vf6UQ==
+
+蔬菜栽培
+
+JOHzpFUAvQmfvs6ljwXIjj7Z2L/m0a6vQVDBelj+kPv1PVwF3zKduA==
 
 任务：
 
@@ -202,3 +218,6 @@ Pass
 Unlit/NewUnlitShader
 ```
 
+我活在社会里是想去改变他，你活在社会里是因为什么都不懂并且是日子人，
+
+我们之间差太多了

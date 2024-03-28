@@ -25,6 +25,8 @@ ___粗斜体文本___
 <font color=#008000 >绿色</font>
 <font color=#0000FF >蓝色</font>
 
+<font color=#\#1A90F >ListViewCustom的UpdateView调用数据使ListViewItem初始化，                                                          </font>
+
 <font face="微软雅黑" size=6 color=#FF0000 >微软雅黑字体</font>
 
 <table><tr><td bgcolor=orange> 背景色是 1 orange</td></tr></table>
