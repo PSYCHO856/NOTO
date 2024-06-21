@@ -6,6 +6,12 @@ D:\OthersProjects\软件加密
 
 
 
+
+
+
+
+
+
 \\192.168.110.226\阵列仿真安装包\阵列水利实验仿真软件
 
 \\192.168.110.226\开发部备份\于展翔
@@ -96,7 +102,7 @@ MainMenuPanel HaspLock.Instance?.LoginHasp();
 
 
 
-
+今天发现了书里那些美好的背面真实的苦难 极少的人真的活在现实里
 
 ![image-20231128093307174](C:\Users\30998\AppData\Roaming\Typora\typora-user-images\image-20231128093307174.png)
 
