@@ -1,0 +1,23 @@
+https://blog.csdn.net/qq_38721111/article/details/112585546
+
+https://blog.csdn.net/m0_46011550/article/details/135392468
+
+Water Environment Restoration
+
+
+
+优点 代码备份与回滚
+
+
+
+1在github上创建仓库
+
+2github desktop clone repository拉取到本地 设置好gitignore
+
+3创建新unity工程，复制到克隆到本地的git文件夹内
+
+4上传
+
+
+
+大文件？
