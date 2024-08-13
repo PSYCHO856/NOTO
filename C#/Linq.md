@@ -51,3 +51,26 @@ public class Devices
     }
 } 作者：疯狂滴小黑 https://www.bilibili.com/read/cv17582918 出处：bilibili
 ```
+
+
+
+
+
+```
+void FindWordInString(string text, string aimWord)
+{
+    text = "ttt,data";
+    aimWord = "data";
+    
+    char[] separators = {'.', '?', '!', ' ', ';', ':', ','};
+    string[] source = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+    var matchQuery = from word in source
+    where word.Equals(aimWord, StringComparison.InvariantCultureIgnoreCase)
+    select word;
+    int wordCount = matchQuery.Count();
+    Debug.Log(wordCount);
+}
+```
+
+
+

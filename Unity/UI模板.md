@@ -231,6 +231,49 @@ namespace Railway
 
 https://blog.csdn.net/weixin_43818160/article/details/126100473
 
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+
+public class DragTest : MonoBehaviour
+{
+    //3D目标
+    public List<GameObject> listTargets = new List<GameObject>();
+    //2D目标点
+    public List<Image> listUITargets = new List<Image>();
+
+    //操作模式
+    bool isUI = false;
+     
+    public Button buttonUI;
+    public Button buttonModel;
+     
+    //起始坐标
+    Vector3 starPos;
+    private void Start()
+    {
+        starPos = transform.localPosition;
+        buttonUI.onClick.AddListener(()=>
+        {
+            isUI = true;
+        });
+        buttonModel.onClick.AddListener(() =>
+        {
+            isUI = false;
+        });
+    }
+     
+    public void OnMouseDrag()
+    {
+        Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
+        Vector3 mouseScreenPos = new Vector3(Input.mo
+
+
+
+
+
 
 
 #### 3d物体显示在ui前

@@ -286,7 +286,12 @@ https://blog.csdn.net/zhurouwanzi/article/details/129231342
 
 小龙 单独写事件类，每个toggle按名称注册一个事件
 
-
+```
+togGroup.GetChild(0).GetComponent<Toggle>().onValueChanged.AddListener((bool value) =>
+{
+    if(value) BandCoverageRecover();
+});
+```
 
 #### 自动排列组件刷新
 
