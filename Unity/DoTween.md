@@ -484,9 +484,32 @@ s.SetLoops(-1, LoopType.Yoyo);
 
 https://easings.net/cn
 
+https://easings.net/
+
 线性Ease.Linear
 
+LoopType.Restart: 当一个循环结束时，它将从头开始。
+LoopType.Yoyo: 当一个循环结束时，它将向后播放，直到完成另一个循环，然后再次向前，然后再次向后，依此类推。
+LoopType.Incremental: 每次循环结束时，它的 endValue 和它的 startValue 之间的差异将被添加到 endValue，从而创建随着每个循环周期增加它们的值的补间。 此循环类型仅适用于Tweeners.
 
+```
+public void DoShine(params object[] parms)
+{
+    // topInfoImage.DOFade(0,1f).SetLoops(8,LoopType.Yoyo).SetEase(Ease.InBack)    
+    topInfoImage.DOFade(0,.45f).SetLoops(8,LoopType.Yoyo).SetEase(Ease.InQuint)    
+        .OnComplete(() =>
+        {
+            topInfoImage.color = new Color(1, 1, 1, 1);
+        });
+    Text t = topInfoImage.transform.GetChild(0).GetComponent<Text>();
+    t.DOFade(0,.45f).SetLoops(8,LoopType.Yoyo).SetEase(Ease.InQuint)   
+        .OnComplete(() =>
+        {
+            t.color = new Color(1, 1, 1, 1);
+        });
+    
+}
+```
 
 ```
 .OnStepComplete(()=>
